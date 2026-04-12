@@ -1,0 +1,8 @@
+{
+  "name": "InterviewAI - AI Interview Prep Platform",
+  "description": "A comprehensive AI-powered interview preparation platform featuring domain-based interviews, coding practice, skill gap analysis, and behavioral tracking.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

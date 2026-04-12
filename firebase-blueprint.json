@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Stores user profile information",
+      "type": "object",
+      "properties": {
+        "full_name": { "type": "string", "description": "User's full name" },
+        "avatar_url": { "type": "string", "description": "URL to user's avatar image" },
+        "professional_summary": { "type": "string", "description": "Brief professional summary" },
+        "updated_at": { "type": "string", "format": "date-time", "description": "Last update timestamp" }
+      },
+      "required": ["full_name"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile document"
+    }
+  }
+}
